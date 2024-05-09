@@ -1,7 +1,9 @@
-# TimeMIL: Advancing Multivariate Time Series Classification via a Time-aware Multiple Instance Learning (ICML2024)
-
+# TimeMIL: Advancing Multivariate Time Series Classification via a Time-aware Multiple Instance Learning (ICML2024) [![paper](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/abs/2405.03140)
 
 Paper link (preprint): [https://arxiv.org/abs/2405.03140]
+
+## News :fire:
+- **May 9, 2024:** Congratulations ! Paper has been accepted by ICML 2024 !
 
 <img align="right" width="50%" height="100%" src="https://github.com/xiwenc1/TimeMIL/blob/main/Figs/intro2_1.jpg">
 
