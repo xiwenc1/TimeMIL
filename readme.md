@@ -31,3 +31,15 @@ Paper link (preprint): [https://arxiv.org/abs/2405.03140]
 ```dropout_patch```: {0.1,0.5} the ratio of windows are randomly masked in each iteration (see appendix F.3).
 ```epoch_des```: {0,10,20} the number of epoches for warm-up (see appendix F.4).
 ```batchsize```: {8,16,32,64,128}.
+
+## Citation
+If you find our work is useful in your research, please consider raising a star  :star:  and citing:
+
+```
+@article{chen2024timemil,
+  title={TimeMIL: Advancing Multivariate Time Series Classification via a Time-aware Multiple Instance Learning},
+  author={Chen, Xiwen and Qiu, Peijie and Zhu, Wenhui and Li, Huayu and Wang, Hao and Sotiras, Aristeidis and Wang, Yalin and Razi, Abolfazl},
+  journal={arXiv preprint arXiv:2405.03140},
+  year={2024}
+}
+```
