@@ -43,3 +43,10 @@ If you find our work is useful in your research, please consider raising a star 
   year={2024}
 }
 ```
+
+## Thanks for the code provided by:
+- Todynet:https://github.com/liuxz1011/TodyNet
+- TapNet: https://github.com/kdd2019-tapnet/tapnet
+- OS-CNN: https://github.com/Wensi-Tang/OS-CNN
+- Nystromformer: https://github.com/mlpen/Nystromformer
+- Group 2 Experiment from: https://github.com/thuml/Time-Series-Library/tree/main
