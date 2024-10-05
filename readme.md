@@ -4,7 +4,7 @@ Paper link (preprint): [https://arxiv.org/abs/2405.03140]
 
 ## News :fire:
 - **May 9, 2024:** Congratulations ! Paper has been accepted by ICML 2024 !
-
+- **Oct 5, 2024:** We updated the tool to efficiently summarize experimental results ```result_extractor.py```. see below.
 <img align="right" width="50%" height="100%" src="https://github.com/xiwenc1/TimeMIL/blob/main/Figs/intro2_1.jpg">
 
 > **Abstract.** Deep neural networks, including transformers and convolutional neural networks, have significantly improved multivariate time series classification (MTSC). However, these methods often rely on supervised learning, which does not fully account for the sparsity and locality of patterns in time series data (e.g., diseases-related anomalous points in ECG). To address this challenge, we formally reformulate MTSC as a weakly supervised problem, introducing a novel multiple-instance learning (MIL) framework for better localization of patterns of interest and modeling time dependencies within time series. Our novel approach, TimeMIL, formulates the temporal correlation and ordering within a time-aware MIL pooling, leveraging a tokenized transformer with a specialized learnable wavelet positional token. The proposed method surpassed 26 recent state-of-the-art methods, underscoring the effectiveness of the weakly supervised TimeMIL in MTSC. 
@@ -17,14 +17,6 @@ Paper link (preprint): [https://arxiv.org/abs/2405.03140]
 
 
 ## Dependencies
-
-
-
-
-## Usage
-
-
-## Environment
 ```
 aeon                      0.5.0
 numpy                     1.23.1
@@ -34,10 +26,26 @@ python                    3.8.18
 ```
 
 
+
+## Usage
+
+
+
 ## Hyperparamter strategy for custom datasets
 ```dropout_patch```: {0.1,0.5} the ratio of windows are randomly masked in each iteration (see appendix F.3).
 ```epoch_des```: {0,10,20} the number of epoches for warm-up (see appendix F.4).
 ```batchsize```: {8,16,32,64,128}.
+
+## Summarize results
+Modify line 11 and 14 in ``` result_extractor.py```
+
+```
+path = Your_output_folder_Path  #'./{args.save_dir}/InceptBackbone/'
+outpath = Path_to_output_the_summarized_results    #'savemodel2_csv/' 
+```
+Then, run the code:
+```python result_extractor.py```
+
 
 ## Citation
 If you find our work is useful in your research, please consider raising a star  :star:  and citing:
