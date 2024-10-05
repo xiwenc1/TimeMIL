@@ -24,10 +24,17 @@ Paper link (preprint): [https://arxiv.org/abs/2405.03140]
 ## Usage
 
 
+## Environment
+```
+aeon                      0.5.0
+numpy                     1.23.1
+torch                     1.13.1+cu117
+torchvision               0.14.1+cu117
+python                    3.8.18
+```
 
 
-
-## Hyperparamters for custom datasets
+## Hyperparamter strategy for custom datasets
 ```dropout_patch```: {0.1,0.5} the ratio of windows are randomly masked in each iteration (see appendix F.3).
 ```epoch_des```: {0,10,20} the number of epoches for warm-up (see appendix F.4).
 ```batchsize```: {8,16,32,64,128}.
