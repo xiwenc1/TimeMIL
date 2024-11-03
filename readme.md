@@ -5,6 +5,7 @@ Paper link (preprint): [https://arxiv.org/abs/2405.03140]
 ## News :fire:
 - **May 9, 2024:** Congratulations ! Paper has been accepted by ICML 2024 !
 - **Oct 5, 2024:** We updated the tool to efficiently summarize experimental results ```result_extractor.py```. see below.
+- **Nov 2,2024:** Check some pretrained weights [Link](https://drive.google.com/file/d/1st_Nbjl9KzmFXeeLV4x4Ch9PZY7FMEmc/view?usp=sharing). 
 <img align="right" width="50%" height="100%" src="https://github.com/xiwenc1/TimeMIL/blob/main/Figs/intro2_1.jpg">
 
 > **Abstract.** Deep neural networks, including transformers and convolutional neural networks, have significantly improved multivariate time series classification (MTSC). However, these methods often rely on supervised learning, which does not fully account for the sparsity and locality of patterns in time series data (e.g., diseases-related anomalous points in ECG). To address this challenge, we formally reformulate MTSC as a weakly supervised problem, introducing a novel multiple-instance learning (MIL) framework for better localization of patterns of interest and modeling time dependencies within time series. Our novel approach, TimeMIL, formulates the temporal correlation and ordering within a time-aware MIL pooling, leveraging a tokenized transformer with a specialized learnable wavelet positional token. The proposed method surpassed 26 recent state-of-the-art methods, underscoring the effectiveness of the weakly supervised TimeMIL in MTSC. 
@@ -46,6 +47,11 @@ outpath = Path_to_output_the_summarized_results    #'savemodel2_csv/'
 Then, run the code:
 ```python result_extractor.py```
 
+## Pretrained weights
+
+We show some examples of weights with different (good) Hyperparamter here:
+[Link](https://drive.google.com/file/d/1st_Nbjl9KzmFXeeLV4x4Ch9PZY7FMEmc/view?usp=sharing)
+ 
 
 ## Citation
 If you find our work is useful in your research, please consider raising a star  :star:  and citing:
@@ -58,6 +64,8 @@ If you find our work is useful in your research, please consider raising a star 
   year={2024}
 }
 ```
+
+
 
 ## Thanks for the code provided by:
 - Todynet:https://github.com/liuxz1011/TodyNet
